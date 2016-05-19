@@ -65,7 +65,10 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.php"><img src="images/logo.png" alt="logo"></a>
+	   	    <a class="navbar-brand" href="index.php">
+			<div style="line-height: 1px; letter-spacing: 10px; margin-top: .5em; font-family: inherit; font-weight: 900; color: #C52D2F;">TIME</div>
+			<div style="font-size: 19px; padding-left: 5px; font-family: cursive;">Cyber Media</div> 
+		    </a>
                 </div>
 				
                 <div class="collapse navbar-collapse navbar-right">
