@@ -1,3 +1,4 @@
+<?php if(!isset($_SESSION)){ session_start(); } ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Home | timecybermedia.com</title>
+    <title>Time Cyber Media</title>
 	
 	<!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -44,12 +45,11 @@
                                 <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                                 <li><a href="#"><i class="fa fa-skype"></i></a></li>
                             </ul>
-                            <!--div class="search">
-                                <form role="form">
-                                    <input type="text" class="search-form" autocomplete="off" placeholder="Search">
-                                    <i class="fa fa-search"></i>
-                                </form>
-                           </div-->
+                            <div class="search">
+				<?php if(isset($_SESSION['agent']) AND !empty($_SESSION['agent'])) { ?>
+					<button id="agentLogout">Logout</button>
+				<?php } ?>
+                           </div>
                        </div>
                     </div>
                 </div>
