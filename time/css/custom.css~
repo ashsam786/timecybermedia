@@ -1,0 +1,26 @@
+.justify-text{
+text-align: justify;
+text-justify: inter-word;
+}
+
+#feature .feature-wrap h3, #feature .feature-wrap h2 { padding: 0px 57px; }
+#feature .feature-wrap img{
+    border: 63px solid #333;
+    width: 420px;
+}
+
+#services .services-wrap img{
+width: 110px;
+}
+
+.partners ul li{
+    font-size: 1.5em;
+    font-family: cursive;
+    font-weight: bold;
+    width: 25%!important;
+    letter-spacing: 2px;
+}
+
+#services .services-wrap .media-heading a{
+    color: #787878;
+}
