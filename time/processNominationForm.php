@@ -46,6 +46,7 @@ if(!isset($_SESSION['agent']) || empty($_SESSION['agent'])){
 if(isset($_POST)){
     try{
 	$clientEmail = $_POST['cEmail'];
+$clientEmail = 'nom@timecybermedia.com';
 	$clientName = $_POST['cName'];
 	$senderEmail = $_SESSION['email'];
 	$senderName = $_SESSION['agent'];
@@ -55,8 +56,10 @@ if(isset($_POST)){
 	if(!isset($clientEmail) || empty($clientEmail)){
 		throw new Exception('Email cannot be empty');
 	}
-//	if($data = sendMail($senderEmail, $senderName, $clientEmail, $clientName, $replyEmail)){
-if(true){
+
+$body = file_get_contents('mailer.html');
+$body = str_replace('%name%', $clientName, $body);
+	if($data = sendMail($senderEmail, $senderName, $clientEmail, $clientName, $replyEmail)){
 		require_once('db.php');
 
 		$time = time(); // time at which nomination is send
@@ -67,6 +70,7 @@ if(true){
 		$stmt->bindParam(':time', $time);
 
 		$stmt->execute();
+		$data = array('result' => true, 'msg' => 'Email send successfully');
 
 	} else {
 		throw new Exception('Mail send failed. Please try again.');

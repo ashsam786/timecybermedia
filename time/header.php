@@ -53,7 +53,8 @@
                        </div>
                     </div>
                 </div>
-            </div><!--/.container-->
+            </div><!--/.c
+ontainer-->
         </div><!--/.top-bar-->
 
         <nav class="navbar navbar-inverse" role="banner">
