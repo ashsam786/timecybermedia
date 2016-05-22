@@ -41,9 +41,9 @@
 
                 <div class="col-md-3 col-sm-6">
                     <div class="widget">
-	<h3>Disclaimer</h3>
+	<!--h3>Disclaimer</h3>
 	<ul>	
-        <p class="justify-text">The images displayed on this website may be a subject matter of copyright. The display of these images does not have any interest, commercial or otherwise, but are being solely and strictly used for illustrative purposes only. Praxis Media Private Limited does not claim any ownership/copyright over the images and have the highest regard to the copyright of the respective owners.</p></ul>               
+        <p class="justify-text">The images displayed on this website may be a subject matter of copyright. The display of these images does not have any interest, commercial or otherwise, but are being solely and strictly used for illustrative purposes only. Praxis Media Private Limited does not claim any ownership/copyright over the images and have the highest regard to the copyright of the respective owners.</p></ul-->               
                     </div>    
                 </div><!--/.col-md-3-->
             </div>
